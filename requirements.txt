@@ -1,1 +1,5 @@
 flask
+bcrypt
+sqlite3
+json
+urllib
