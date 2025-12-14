@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select a Student</title>
+    <link href="static/css/main.css" rel="stylesheet"/>
+    <script src="/static/scripts/scripts.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h3>Select a Student</h3>
+            <select id="students">
+                {% for x in students %}
+                    <option value="{{ x[0] }}">{{ x[1] }}</option>
+                {% endfor %}
+            </select>
+            <button id="submit" class="button" onclick="student()">Submit</button>
+        </div>
+    </main>
+</body>

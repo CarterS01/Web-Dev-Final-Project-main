@@ -1,0 +1,46 @@
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    padding: 2em;
+}
+
+h3 {
+    padding: 1.5em;
+}
+
+.button {
+    background-color: rgb(24, 192, 175);
+    color: white;
+    border: none;
+    display: inline-block;
+    width: 8em;
+    height: 3em;
+}
+
+.button:hover {
+    background-color: rgb(108, 239, 239);
+}
+
+select {
+    padding: .85em;
+    background-color: rgb(24, 192, 175);
+    color: white;
+    border: none;
+}
+
+select:hover {
+    background-color: rgb(108, 239, 239);
+}
+
+input {
+    margin-bottom: 1.5em;
+    border: none;
+    background-color: rgb(24, 192, 175);
+    color: white;
+}

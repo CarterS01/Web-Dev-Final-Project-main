@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link href="static/css/main.css" rel="stylesheet"/>
+    <script src="/static/scripts/scripts.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h2>Admin Page</h2>
+            <h3>Enter Grades</h3>
+            <p>Science</p>
+            <label for="science_grade_1">Grade 1:</label>
+            <select id="science_grade_1">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+            <label for="science_grade_2">Grade 2:</label>
+            <select id="science_grade_2">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+            <label for="science_grade_3">Grade 3:</label>
+            <select id="science_grade_3">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+            <label for="science_grade_4">Grade 4:</label>
+            <select id="science_grade_4">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+            <p>Math</p>
+            <label for="math_grade_1">Grade 1:</label>
+            <select id="math_grade_1">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+            <label for="math_grade_2">Grade 2:</label>
+            <select id="math_grade_2">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+            <label for="math_grade_3">Grade 3:</label>
+            <select id="math_grade_3">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+            <label for="math_grade_4">Grade 4:</label>
+            <select id="math_grade_4">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+            <h3>Select a Student</h3>
+            <select id="students">
+                {% for x in students %}
+                    <option value="{{ x[0] }}">{{ x[1] }}</option>
+                {% endfor %}
+            </select>
+            <button id="submit" class="button" onclick="select_stu()">Submit</button>
+    </main>
+</body>
